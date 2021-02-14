@@ -1,0 +1,24 @@
+
+.t{
+	margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-left: 4px red solid;
+  background-color: #f1f1f1;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  width: 650px;
+  font-size: 20px;    
+}
+.h{
+	margin : 0 auto;
+  background-color: #fbfbfb;
+  border:3px #ebebeb solid;
+  border-radius: 10px;
+  width: 650px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+}
