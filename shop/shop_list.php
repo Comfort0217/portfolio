@@ -32,7 +32,7 @@ else
 <body>
 <div class=h>
 <?php
-
+print'test';
 try
 {
 
@@ -71,6 +71,7 @@ print '<a href="shop_cartlook.php">発注商品を見る</a><br />';
 }
 catch (Exception $e)
 {
+	 print $e;
 	 print 'ただいま障害により大変ご迷惑をお掛けしております。';
 	 exit();
 }
