@@ -36,9 +36,9 @@ print'test';
 try
 {
 
-$dsn='mysql:dbname=shop;host=localhost;charset=utf8';
-$user='root';
-$password='';
+$dsn='mysql://us-cdbr-east-03.cleardb.com/heroku_0aa7c45fbc76b97?reconnect=true';
+$user='b1af45da9c7745';
+$password='39ebab87';
 $dbh=new PDO($dsn,$user,$password);
 $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
