@@ -1,0 +1,104 @@
+main{
+  text-align: center;
+}
+
+.gazou{
+  position: relative;
+}
+
+.gazou h{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  color: rgb(255, 255, 255);
+  font-family: 'UbuntuMono', sans-serif;
+  font-size: 50px;
+}
+
+.gazou h2{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  color: rgb(211, 198, 198);
+  font-family: Quicksand, sans-serif;
+  font-size: 20px;
+  border: 6px groove;
+}
+
+main a{
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: blue;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+  background-color:rgb(255, 255, 255);
+}
+main a:hover{
+  background: blue;
+  color: white;
+}
+
+
+.gazou img{
+  width: 100%;
+  height: 800px;
+}
+header  {
+  width:100%;
+  height: 50px;
+  color: #000;
+  background-color: #0a49c7;
+  border-bottom: 5px solid #006699;
+}
+
+header a{
+  color: blue;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+  background-color:whitesmoke;
+  text-decoration: none;
+  font-family: 'Anton', black;
+  font-size: large;
+  margin: 30px;
+  top: 20px;
+  }
+  header a:hover{
+  background:#3d8cf3;
+  color: white;
+  }
+
+ul{
+  list-style: none;
+  line-height: 55px;
+}
+li{
+  display: inline-block;
+  list-style: none;
+  margin-right: 10px;
+  margin-left: -40px;
+}
+footer{
+  clear: left;
+  text-align: center;
+  padding-top: 0.5px;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-bottom: 5px solid #0f2a8d;
+}
+
