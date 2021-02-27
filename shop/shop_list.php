@@ -35,11 +35,17 @@ else
 print'test';
 try
 {
+	error_log($e);
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 $server = $url["host"];
 $username = $url["user"];
 $password = $url["pass"];
 $db = substr($url["path"], 1);
+error_log($url . "\n");
+error_log($server . "\n");
+error_log($username . "\n");
+error_log($password . "\n");
+
 $dbh = new PDO(
   'mysql:host=' . $server . ';dbname=' . $db . ';charset=utf8mb4',
   $username,
@@ -85,7 +91,7 @@ print '<a href="shop_cartlook.php">発注商品を見る</a><br />';
 }
 catch (Exception $e)
 {
-	 error_log($e);
+	error_log($e);
 	 print 'test';
 	 print 'ただいま障害により大変ご迷惑をお掛けしております。';
 	 exit();
