@@ -87,7 +87,6 @@ print '<a href="shop_cartlook.php">発注商品を見る</a><br />';
 catch (Exception $e)
 {
 	error_log($e);
-	 print 'test';
 	 print 'ただいま障害により大変ご迷惑をお掛けしております。';
 	 exit();
 }
