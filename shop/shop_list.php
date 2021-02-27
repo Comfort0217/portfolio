@@ -36,16 +36,10 @@ print'test';
 try
 {
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-var_dump(getenv(“CLEARDB_DATABASE_URL”));
-var_dump($url);
 $server = $url["host"];
 $username = $url["user"];
 $password = $url["pass"];
 $db = substr($url["path"], 1);
-error_log($url . "\n");
-error_log($server . "\n");
-error_log($username . "\n");
-error_log($password . "\n");
 
 $dbh = new PDO(
   'mysql:host=' . $server . ';dbname=' . $db . ';charset=utf8mb4',
