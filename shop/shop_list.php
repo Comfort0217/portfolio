@@ -32,15 +32,29 @@ else
 <body>
 <div class=h>
 <?php
-
+print'test';
 try
 {
-
-$dsn='mysql:dbname=shop;host=localhost;charset=utf8';
-$user='root';
-$password='';
-$dbh=new PDO($dsn,$user,$password);
-$dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
+$ = new PDO(
+  'mysql:host=' . $server . ';dbname=' . $db . ';charset=utf8mb4',
+  $username,
+  $password,
+  [
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
+  ]
+	);
+//$dsn='mysql://us-cdbr-east-03.cleardb.com/heroku_0aa7c45fbc76b97?reconnect=true';
+//$user='b1af45da9c7745';
+//$password='39ebab87';
+// $dbh=new PDO($dsn,$user,$password);
+// $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
 $sql='SELECT code,name,price FROM mst_product WHERE 1';
 $stmt=$dbh->prepare($sql);
@@ -71,6 +85,8 @@ print '<a href="shop_cartlook.php">発注商品を見る</a><br />';
 }
 catch (Exception $e)
 {
+	 error_log($e);
+	 print 'test';
 	 print 'ただいま障害により大変ご迷惑をお掛けしております。';
 	 exit();
 }
