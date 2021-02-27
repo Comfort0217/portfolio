@@ -40,7 +40,7 @@ $server = $url["host"];
 $username = $url["user"];
 $password = $url["pass"];
 $db = substr($url["path"], 1);
-$ = new PDO(
+$dbh = new PDO(
   'mysql:host=' . $server . ';dbname=' . $db . ';charset=utf8mb4',
   $username,
   $password,
