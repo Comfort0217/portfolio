@@ -40,7 +40,7 @@ $server = $url["host"];
 $username = $url["user"];
 $password = $url["pass"];
 $db = substr($url["path"], 1);
-$dbh = new PDO(
+$ = new PDO(
   'mysql:host=' . $server . ';dbname=' . $db . ';charset=utf8mb4',
   $username,
   $password,
@@ -86,6 +86,7 @@ print '<a href="shop_cartlook.php">発注商品を見る</a><br />';
 catch (Exception $e)
 {
 	 error_log($e);
+	 print 'test';
 	 print 'ただいま障害により大変ご迷惑をお掛けしております。';
 	 exit();
 }
