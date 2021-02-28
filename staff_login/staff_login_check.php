@@ -46,7 +46,7 @@ try
 
   if($rec==false)
   {
-    print'スタッフコードかパスワードが違っています。<br />';
+    print'社員コードかパスワードが違っています。<br />';
     print'<a href="staff_login.html">戻る</a>';
   }
   else
