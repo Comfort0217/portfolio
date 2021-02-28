@@ -53,7 +53,7 @@ $birth=$post['birth'];
 
 
 print"<div class=t>";
-print'<h>ご注文情報</h><br />';
+print'<h>注文情報</h><br />';
 print "</div>";
 print"<div class=h>";
 print $onamae.'様<br />';

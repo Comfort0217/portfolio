@@ -15,6 +15,6 @@ session_destroy();
 <title>生魚発注</title>
 </head>
 <body>
-カートを空にしました。<br />
+発注リストを空にしました。<br />
 </body>
 </html>

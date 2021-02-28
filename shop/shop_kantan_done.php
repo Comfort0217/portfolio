@@ -51,7 +51,7 @@ $address=$post['address'];
 $tel=$post['tel'];
 
 print"<div class=t>";
-print'<h>ご注文情報</h><br />';
+print'<h>注文情報</h><br />';
 print "</div>";
 
 print'<div class=h>';
@@ -117,14 +117,14 @@ $sql='INSERT INTO dat_member (password,name,email,postal1,postal2,address,tel) V
 	
 $honbun.="--------------------\n";
 $honbun.="\n";
-$honbun.="準備が整い次第、発送いたします。\n";
+$honbun.="ご注文通り、発送いたします。\n";
 $honbun.="\n";
 $honbun.="□□□□□□□□□□□□□□\n";
-$honbun.="株式会社イズミ　鮮魚課バイヤー　田中義朋\n";
+$honbun.="株式会社お魚屋さん　鮮魚課バイヤー\n";
 $honbun.="\n";
-$honbun.="広島県二葉の里\n";
+$honbun.="広島県\n";
 $honbun.="電話 090-6060-xxxx\n";
-$honbun.="メール info@rokumarunouen.co.jp\n";
+$honbun.="メール info@osakanaya.co.jp\n";
 $honbun.="□□□□□□□□□□□□□□\n";
 //print '<br />';
 print nl2br($honbun);
@@ -136,7 +136,7 @@ mb_language('Japanese');
 mb_internal_encoding('UTF-8');
 //mb_send_mail($email,$title,$honbun,$header);
 
-$title='お客様からご注文がありました。';
+$title='ご注文がありました。';
 $header='From:'.$email;
 $honbun=html_entity_decode($honbun,ENT_QUOTES,'UTF-8');
 mb_language('Japanese');

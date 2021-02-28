@@ -67,7 +67,7 @@ print "</div>";
 
 print'<div class=h>';
 
-print 'お名前<br />';
+print '名前<br />';
 print $onamae;
 print '<br /><br />';
 

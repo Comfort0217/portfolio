@@ -4,17 +4,16 @@ session_regenerate_id(true);
 if(isset($_SESSION['member_login'])==false)
 {
 	print"<div class=t>";
-	print 'ようこそゲスト様　';
-	print '<a href="member_login.html">会員ログイン</a><br />';
+	print '社員：　';
+	print '<a href="member_login.html">ログイン</a><br />';
 	print '<br />';
 	print "</div>";
 }
 else
 {
 	print"<div class=t>";
-	print 'ようこそ';
+	print 'ログイン中　社員：';
 	print $_SESSION['member_name'];
-	print '様　';
 	print '<a href="member_logout.php">ログアウト</a><br />';
 	print '<br />';
   print "</div>";

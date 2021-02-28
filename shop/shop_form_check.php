@@ -49,12 +49,12 @@ $okflg=true;
 
 if($onamae=='')
 {
-	print 'お名前が入力されていません。<br /><br />';
+	print '名前が入力されていません。<br /><br />';
 	$okflg=false;
 }
 else
 {
-	print 'お名前<br />';
+	print '名前<br />';
 	print $onamae;
 	print '<br /><br />';
 }
