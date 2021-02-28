@@ -46,6 +46,8 @@ $chumon=$post['chumon'];
 $pass=$post['pass'];
 $danjo=$post['danjo'];
 $birth=$post['birth'];
+
+
 print"<div class=t>";
 print'<h>ご注文情報</h><br />';
 print "</div>";
@@ -69,14 +71,17 @@ $cart=$_SESSION['cart'];
 $kazu=$_SESSION['kazu'];
 $max=count($cart);
 
-$dsn='mysql:dbname=shop;host=localhost;charset=utf8';
-$user='root';
-$password='';
-$dbh=new PDO($dsn,$user,$password);
-$dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+// $dsn='mysql:dbname=shop;host=localhost;charset=utf8';
+// $user='root';
+// $password='';
+// $dbh=new PDO($dsn,$user,$password);
+// $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
 for($i=0;$i<$max;$i++)
 {
+
+	
+
 	$sql='SELECT name,price FROM mst_product WHERE code=?';
 	$stmt=$dbh->prepare($sql);
 	$data[0]=$cart[$i];
@@ -142,11 +147,11 @@ $honbun.="\n";
 $honbun.="ご注文通り、発送いたします。\n";
 $honbun.="\n";
 $honbun.="□□□□□□□□□□□□□□\n";
-$honbun.="株式会社イズミ　鮮魚課バイヤー　田中義朋\n";
+$honbun.="株式会社お魚屋さん　鮮魚課バイヤー\n";
 $honbun.="\n";
-$honbun.="広島県二葉の里\n";
+$honbun.="広島県\n";
 $honbun.="電話 090-6060-xxxx\n";
-$honbun.="メール info@rokumarunouen.co.jp\n";
+$honbun.="メール info@osakanaya.co.jp\n";
 $honbun.="□□□□□□□□□□□□□□\n";
 //print '<br />';
 print nl2br($honbun);
@@ -158,7 +163,7 @@ mb_language('Japanese');
 mb_internal_encoding('UTF-8');
 //mb_send_mail($email,$title,$honbun,$header);
 
-$title='お客様からご注文がありました。';
+$title='ご注文がありました。';
 $header='From:'.$email;
 $honbun=html_entity_decode($honbun,ENT_QUOTES,'UTF-8');
 mb_language('Japanese');
