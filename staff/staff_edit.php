@@ -63,7 +63,7 @@ catch(Exception $e)
 }
 ?>
 <div class=t>
-  社員修正<br />
+  社員情報　修正<br />
 </div>
 <div class=h>
   <br />

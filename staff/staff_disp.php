@@ -70,7 +70,7 @@ catch(Exception $e)
   社員コード<br />
   <?php print $staff_code;?>
   <br />
-  スタッフ名<br />
+  社員名<br />
   <?php print $staff_name;?>
 <br />
 <form>
