@@ -14,7 +14,7 @@ else
 	print"<div class=t>";
 	print 'ログイン中　社員：';
 	print $_SESSION['member_name'];
-	print '<a href="member_logout.php">ログアウト</a><br />';
+	print '<a href="member_logout.php">　ログアウト</a><br />';
 	print '<br />';
   print "</div>";
 }
