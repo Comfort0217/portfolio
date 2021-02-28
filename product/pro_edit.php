@@ -76,7 +76,7 @@ catch(Exception $e)
 }
 ?>
  <div class=t>
-   生魚情報　修正<br />
+   商品情報　修正<br />
 </div>
 <div class=h>
   <br />
