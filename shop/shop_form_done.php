@@ -138,11 +138,11 @@ if($chumon=='chumontouroku')
 	$lastmembercode=$rec['LAST_INSERT_ID()'];
 }
 
-// $sql='UNLOCK TABLES';
-// $stmt=$dbh->prepare($sql);
-// $stmt->execute();
+$sql='UNLOCK TABLES';
+$stmt=$dbh->prepare($sql);
+$stmt->execute();
 
-// $dbh=null;
+$dbh=null;
 
 $honbun.="--------------------\n";
 $honbun.="\n";
