@@ -12,8 +12,8 @@ if(isset($_SESSION['login'])==false)
 else
 {
 	print"<div class=t>";
+	print 'ログイン中: 社員<br />';
 	print $_SESSION['staff_name'];
-	print 'さんログイン中<br />';
 	print '<br />';
 	print "</div>"; 
 }
@@ -30,7 +30,7 @@ else
 <div class=h>
 	商品管理トップメニュー<br />
 	<br />
-	<a href="../staff/staff_list.php">スタッフ管理</a><br />
+	<a href="../staff/staff_list.php">社員管理</a><br />
 	<br />
 	<a href="../product/pro_list.php">商品管理</a><br />
 	<br />
