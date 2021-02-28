@@ -15,8 +15,8 @@ main{
   transform: translate(-50%,-50%);
   margin:0;
   padding:0;
-  color: white;
-  font-family: Quicksand, sans-serif;
+  color: rgb(255, 255, 255);
+  font-family: 'UbuntuMono', sans-serif;
   font-size: 50px;
 }
 
@@ -29,17 +29,27 @@ main{
   transform: translate(-50%,-50%);
   margin:0;
   padding:0;
-  color: white;
+  color: rgb(211, 198, 198);
   font-family: Quicksand, sans-serif;
   font-size: 20px;
-  border: 6px groove orange;
+  border: 6px groove;
 }
 
 main a{
+  display: inline-block;
+  padding: 0.3em 1em;
   text-decoration: none;
-  background-color: aliceblue;
-  color: orangered;
+  color: blue;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+  background-color:rgb(255, 255, 255);
 }
+main a:hover{
+  background: blue;
+  color: white;
+}
+
 
 .gazou img{
   width: 100%;
@@ -49,22 +59,27 @@ header  {
   width:100%;
   height: 50px;
   color: #000;
-  background-color: #fff100;
-  border-bottom: 5px solid #ccc100;
+  background-color: #0a49c7;
+  border-bottom: 5px solid #006699;
 }
 
 header a{
-  
+  color: blue;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+  background-color:whitesmoke;
   text-decoration: none;
-  font-family: arial black;
+  font-family: 'Anton', black;
   font-size: large;
-  border: 2px solid #b84c00;
-  background-color: orangered;
-  color: aliceblue;
   margin: 30px;
   top: 20px;
+  }
+  header a:hover{
+  background:#3d8cf3;
+  color: white;
+  }
 
-}
 ul{
   list-style: none;
   line-height: 55px;
@@ -84,6 +99,5 @@ footer{
   width: 100%;
   background-color: black;
   color: white;
-  border-bottom: 5px solid #ccc100;
+  border-bottom: 5px solid #0f2a8d;
 }
-
