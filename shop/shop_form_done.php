@@ -139,10 +139,10 @@ if($chumon=='chumontouroku')
 }
 
 // $sql='UNLOCK TABLES';
-$stmt=$dbh->prepare($sql);
-$stmt->execute();
+// $stmt=$dbh->prepare($sql);
+// $stmt->execute();
 
-$dbh=null;
+// $dbh=null;
 
 $honbun.="--------------------\n";
 $honbun.="\n";
