@@ -12,7 +12,7 @@ if(isset($_SESSION['login'])==false)
 else
 {
 	print"<div class=t>";
-	print 'ログイン中: 社員<br />';
+	print 'ログイン中　社員：';
 	print $_SESSION['staff_name'];
 	print '<br />';
 	print "</div>"; 
