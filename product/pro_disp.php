@@ -22,13 +22,24 @@ if(isset($_SESSION['login'])==false)
 
 try{
 
+  $dbh = new PDO(
+    'mysql:host=' . $server . ';dbname=' . $db . ';charset=utf8mb4',
+    $username,
+    $password,
+    [
+      PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+      PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+      PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
+    ]
+    );
+
   $pro_code=$_GET['procode'];
 
-  $dsn='mysql:dbname=shop;host=localhost;charset=utf8';
-  $user='root';
-  $password='';
-  $dbh=new PDO($dsn,$user,$password);
-  $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+  // $dsn='mysql:dbname=shop;host=localhost;charset=utf8';
+  // $user='root';
+  // $password='';
+  // $dbh=new PDO($dsn,$user,$password);
+  // $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
   $sql='SELECT name,price,gazou FROM mst_product WHERE code=?';
   $stmt = $dbh->prepare($sql);
