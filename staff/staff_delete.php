@@ -67,13 +67,13 @@ catch(Exception $e)
 </div>
 <div class=h>
   <br />
-  スタッフコード<br />
+  社員コード<br />
   <?php print $staff_code;?>
 <br />
-スタッフ名<br />
+社員名<br />
 <?php print $staff_name;?>
 <br />
-このスタッフを削除してよろしいですか？<br />
+この社員を削除してよろしいですか？<br />
 <br />
 <form method="post" action="staff_delete_done.php">
   <input type ="hidden" name ="code" value="<?php print $staff_code;?>">

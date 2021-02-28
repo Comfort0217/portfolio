@@ -64,7 +64,7 @@ if(isset($_SESSION['login'])==false)
 
     print'<div class=h>';
     print$staff_name;
-    print'さんを追加しました。<br />';
+    print'を追加しました。<br />';
     
   }
   catch(Exception $e)

@@ -52,7 +52,7 @@ $stmt->execute();
 
 $dbh = null;
 print"<div class=t>";
-print'ゆめタウン鮮魚課:スタッフ一覧<br /><br />';
+print'鮮魚課：登録社員一覧<br />';
 print'<form method="post" action="staff_branch.php">';
 print "</div>";
 print'<div class=h>';

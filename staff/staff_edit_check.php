@@ -31,12 +31,12 @@ $post=sanitize($_POST);
 
   if($staff_name=='')
   {   
-    print'スタッフ名が入力されていません。<br />';
+    print'社員名が入力されていません。<br />';
   }
   else
   {
       print'<div class=h>';
-      print'スタッフ名:';
+      print'社員名:';
       print$staff_name;
       print'<br />';
     }

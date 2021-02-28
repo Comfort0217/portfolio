@@ -63,11 +63,11 @@ catch(Exception $e)
 }
 ?>
 <div class=t>
-  スタッフ情報参照<br />
+  社員情報参照<br />
 </div>
 <div class=h>
   <br />
-  スタッフコード<br />
+  社員コード<br />
   <?php print $staff_code;?>
   <br />
   スタッフ名<br />

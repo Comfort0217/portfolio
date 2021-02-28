@@ -63,17 +63,17 @@ catch(Exception $e)
 }
 ?>
 <div class=t>
-  スタッフ修正<br />
+  社員修正<br />
 </div>
 <div class=h>
   <br />
-  スタッフコード<br />
+  社員コード<br />
 <?php print $staff_code;?>
 <br />
 <br />
 <form method="post" action="staff_edit_check.php">
   <input type ="hidden" name ="code" value="<?php print $staff_code;?>">
-  スタッフ名<br />
+  社員名<br />
 
   <input type="text" name="name"style="width:200px" value="<?php print $staff_name;?>"><br />
 パスワードを入力してください。<br />
