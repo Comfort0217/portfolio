@@ -65,15 +65,16 @@ header  {
 
 header a{
   color: blue;
-  border: solid 2px #67c5ff;
+  border: solid 2px whitesmoke;
   border-radius: 3px;
   transition: .4s;
   background-color:whitesmoke;
   text-decoration: none;
   font-family: 'Anton', black;
-  font-size: large;
-  margin: 30px;
+  font-size:15px;
+  margin: 40px;
   top: 20px;
+  padding: 6px;
   }
 
   header a:hover{
@@ -103,3 +104,4 @@ footer{
   color: black;
   border-bottom: 5px solid #919191;
 }
+
