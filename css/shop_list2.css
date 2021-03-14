@@ -11,6 +11,11 @@
   width: 650px;
   font-size: 20px;    
 }
+
+a{
+  text-decoration: none;
+}
+
 .h{
 	margin : 0 auto;
   background-color: #fbfbfb;

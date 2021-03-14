@@ -9,7 +9,13 @@
   padding-left: 15px;
   width: 500px;
   font-size: 20px;    
+  text-decoration: none;
 }
+
+a{
+  text-decoration: none;
+}
+
 .h{
 	margin : 0 auto;
   background-color: #fbfbfb;
